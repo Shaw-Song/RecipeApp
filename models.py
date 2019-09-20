@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Recipe(models.Model):
     recipe_name = models.CharField(max_length=200)
-    recipe_discription = models.CharField(max_length=200)
+    recipe_discription = models.TextField(max_length=200)
     pub_date=models.DateTimeField('date published')
 
     def __str__(self):
